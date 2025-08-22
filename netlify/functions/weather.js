@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 export async function handler(event, context) {
   try {
     const city = event.queryStringParameters.city || "London";
@@ -13,7 +11,7 @@ export async function handler(event, context) {
     }
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    const response = await fetch(url);
+    const response = await fetch(url); // built-in fetch, no import needed
     const data = await response.json();
 
     if (data.cod !== 200) {
