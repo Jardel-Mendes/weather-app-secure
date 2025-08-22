@@ -3,9 +3,9 @@ async function getWeather(city) {
     const response = await fetch(`/.netlify/functions/weather?city=${city}`);
     const data = await response.json();
 
-    if (data.cod !== 200) {
+    if (data.error) {
       document.getElementById("weather").innerText =
-        `Error: ${data.message}`;
+        `Error: ${data.error}`;
       return;
     }
 
