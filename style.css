@@ -1,43 +1,60 @@
+/* General body styling */
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f4f8;
-  color: #333;
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  margin: 0;
+  background: #f0f4f8; /* fallback background */
 }
+
+/* Main app container */
 .app {
-  background: white;
+  background: rgba(0, 0, 0, 0.5); /* transparent glass effect */
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px); /* glassmorphism */
   width: 100%;
   max-width: 500px;
 }
+
+/* Search form */
 form {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
+
+/* Input box */
 input {
   flex: 1;
   padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
+  outline: none;
 }
+
+/* Buttons */
 button {
   padding: 0.5rem 1rem;
   background: #4f46e5;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
+  transition: background 0.3s;
 }
+
 button:hover {
   background: #4338ca;
 }
-#weather, #forecast {
+
+/* Weather + forecast containers */
+#weather,
+#forecast {
   margin-top: 1rem;
 }
