@@ -1,22 +1,18 @@
 // Map weather conditions to background images
 const weatherBackgrounds = {
   day: {
-    Clear: "day_clear.jpg",
+    Clear: "day_clear.webp",
     Clouds: "day_clouds.jpg",
     Rain: "day_rain.jpg",
     Snow: "day_snow.jpg",
-    Drizzle: "day_rain.jpg",
-    Thunderstorm: "day_rain.jpg",
-    Mist: "day_clouds.jpg",
+   
   },
   night: {
     Clear: "night_clear.jpg",
     Clouds: "night_clouds.jpg",
     Rain: "night_rain.jpg",
     Snow: "night_snow.jpg",
-    Drizzle: "night_rain.jpg",
-    Thunderstorm: "night_rain.jpg",
-    Mist: "night_clouds.jpg",
+   
   },
 };
 
