@@ -9,6 +9,28 @@ body {
   justify-content: center;
   align-items: center;
   background: #f0f4f8; /* fallback background */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth fading background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.show-bg::before {
+  opacity: 1;
 }
 
 /* Main app container */
